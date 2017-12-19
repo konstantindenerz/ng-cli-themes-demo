@@ -1,0 +1,11 @@
+// Specify the themes
+.themes(@block) {
+  :host-context(.theme-foo) {
+    @import (reference) '_fooVariables';
+    @block();
+  }
+  :host-context(.theme-bar) {
+    @import (reference) '_barVariables';
+    @block();
+  }
+}
