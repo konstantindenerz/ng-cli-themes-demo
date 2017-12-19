@@ -19,8 +19,16 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.less"
+        "styles.less",
+        "foo.less"
       ],
+      "stylePreprocessorOptions": {
+        "includePaths": [
+          "styles",
+          "fooTheme",
+          "barTheme"
+        ]
+      },
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
