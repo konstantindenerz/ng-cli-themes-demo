@@ -7,6 +7,12 @@
   }
 }
 
-.themes({ background-color: @color; > div {
-  background-color: darken(@color, 10%);
-}; });
+.host() {
+  background-color: @color;
+
+  > div {
+    background-color: darken(@color, 10%);
+  }
+}
+
+.themes({ .host; });
