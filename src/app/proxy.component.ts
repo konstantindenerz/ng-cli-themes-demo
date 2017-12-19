@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-  template: '',
+  template: '<router-outlet></router-outlet>',
 })
 export class ProxyComponent {
 }
